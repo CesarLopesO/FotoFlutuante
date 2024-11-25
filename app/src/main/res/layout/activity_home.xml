@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:focusableInTouchMode="true">
+
+    <!-- Título de boas-vindas -->
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Bem-vindo(a)!"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Botão de galeria acima do botão de logout -->
+    <Button
+        android:id="@+id/btnGallery"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Galeria"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF6200EE"
+        app:layout_constraintTop_toBottomOf="@id/welcomeTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botão de logout -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        app:layout_constraintTop_toBottomOf="@id/btnGallery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botão flutuante de câmera no canto inferior direito -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_camera"
+        android:contentDescription="Botão da câmera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

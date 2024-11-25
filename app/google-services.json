@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "308451876959",
+    "project_id": "fotoflutuante-1af92",
+    "storage_bucket": "fotoflutuante-1af92.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308451876959:android:c1c4650749d0a34256bbea",
+        "android_client_info": {
+          "package_name": "com.example.fotoflutuante"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308451876959-uo6d2d87o6a2k7sjoaiga9r8v0uruaqc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fotoflutuante",
+            "certificate_hash": "4b7122c444a772d2290ad9aa5549487abc51409f"
+          }
+        },
+        {
+          "client_id": "308451876959-h1pdpu3mmsf29186cu0sgemdekc1t20k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMV0pWTQNFX1jXPOnsKT-08wdrqR6h19M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308451876959-h1pdpu3mmsf29186cu0sgemdekc1t20k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
