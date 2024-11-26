@@ -27,15 +27,21 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.root.requestFocus() // Remova o foco inicial de EditTexts
+        binding.root.isFocusable = true
+        binding.root.isFocusableInTouchMode = true// Remova o foco inicial de EditTexts
 
 
-        // Limpa o foco dos campos de entrada de e-mail e senha
         binding.etEmail.clearFocus()
         binding.etPassword.clearFocus()
 
-        // Garante que o layout principal da activity receba o foco
-        binding.root.requestFocus()
+        val inputMethodManager = getSystemService(INPUT_METHOD_SERVICE) as android.view.inputmethod.InputMethodManager
+        inputMethodManager.hideSoftInputFromWindow(binding.root.windowToken, 0)
+
+
+
+
+
+
 
         // Inicializar o Firebase Auth e SharedPreferences
         auth = FirebaseAuth.getInstance()
